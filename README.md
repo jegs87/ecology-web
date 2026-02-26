@@ -1,18 +1,20 @@
 # Inspeccion ambiental mobile-first
 
-Web app simple basada en tu archivo de inspeccion ambiental.
+Web app basada en tu archivo de inspeccion ambiental.
 
 ## Como usar
 
 1. Abre `/Users/juliogomez/Documents/ecology-web/index.html` en el navegador.
 2. Completa los datos iniciales.
 3. Responde el cuestionario.
-4. Revisa el indice de cumplimiento y los riesgos mas altos al final.
+4. Revisa la puntuacion final y los riesgos mas altos al final.
 
 ## Llenado desde Excel
 
-Se cargaron 3 categorias y 19 preguntas desde:
-- `/Users/juliogomez/Downloads/Base de Datos para Inspección ambiental.xlsx`
+Se cargaron 11 categorias y 81 preguntas desde:
+- `/Users/juliogomez/Downloads/Base de Datos para Inspección ambiental(1).xlsx`
 
-Incluye una regla especial:
-- Si en la primera pregunta de residuos peligrosos se responde `No`, el resto de preguntas de ese bloque se marca como `No aplica` y el flujo salta al siguiente bloque.
+Reglas de evaluacion:
+- Cada respuesta `Cumple` suma 1 punto a la puntuacion final.
+- Las respuestas `No aplica` no suman ni restan y se excluyen del total evaluable.
+- En secciones configuradas con pregunta de aplicabilidad, si la primera respuesta es `No aplica`, el resto del bloque se marca como `No aplica` y se salta automaticamente.

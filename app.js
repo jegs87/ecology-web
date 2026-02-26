@@ -203,21 +203,20 @@ function normalize(value = "") {
 }
 
 function isNoAplica(value) {
-  return normalize(value) === "no aplica";
+  return normalize(value).includes("no aplica");
 }
 
 function isCumple(value) {
   const normalized = normalize(value);
-  return normalized === "cumple" || normalized === "si" || normalized === "sí";
+  return normalized.includes("cumple") && !normalized.includes("no cumple");
 }
 
 function isNoCumple(value) {
-  const normalized = normalize(value);
-  return normalized === "no cumple" || normalized === "no";
+  return normalize(value).includes("no cumple");
 }
 
 function defaultOptions() {
-  return ["Cumple", "No cumple", "No aplica"];
+  return ["✅ Cumple", "❌ No cumple", "➖ No aplica"];
 }
 
 function visibleFlow() {
@@ -400,7 +399,7 @@ function renderSummary() {
       <h1>Resultado de inspección</h1>
       <p>${escapeHtml(state.meta.proyecto || "Proyecto sin nombre")} | ${escapeHtml(state.meta.fecha)}</p>
       <div class="score">
-        <span>Puntuación final (1 punto por cada pregunta en CUMPLE)</span>
+        <span>Puntuación final</span>
         <strong>${totalPoints} / ${totalEvaluables}</strong>
         <p class="text-small">Cumplimiento total: ${compliance}%</p>
       </div>

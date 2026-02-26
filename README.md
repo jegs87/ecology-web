@@ -17,4 +17,4 @@ Se cargaron 11 categorias y 81 preguntas desde:
 Reglas de evaluacion:
 - Cada respuesta `Cumple` suma 1 punto a la puntuacion final.
 - Las respuestas `No aplica` no suman ni restan y se excluyen del total evaluable.
-- En secciones configuradas con pregunta de aplicabilidad, si la primera respuesta es `No aplica`, el resto del bloque se marca como `No aplica` y se salta automaticamente.
+- En todas las secciones, si la primera respuesta es `No aplica`, el resto del bloque se marca como `No aplica` y se salta automaticamente.

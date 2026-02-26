@@ -1,16 +1,16 @@
 const questionnaire = [
   {
     key: "sec-residuos-peligrosos",
-    category: "Residuos Peligrosos",
+    category: "☣️ Residuos Peligrosos",
     gateOnFirst: true,
     items: [
-      { id: "sec-residuos-peligrosos-1", text: "¿Se generan Residuos Peligrosos en el sitio? Respuesta NO APLICA→Pasar a Sustancias Químicas" },
+      { id: "sec-residuos-peligrosos-1", text: "¿Se generan Residuos Peligrosos en el sitio?" },
       { id: "sec-residuos-peligrosos-2", text: "¿Se cuenta con el Registro como Generador de Residuos Peligrosos ante SEMARNAT en la categoría correspondiente al sitio o proyecto" },
       { id: "sec-residuos-peligrosos-3", text: "¿Se mantienen actualizadas las bitácoras de entrada y salida de residuos peligrosos, registrando fecha de ingreso, nombre del residuo y cantidad?" },
       { id: "sec-residuos-peligrosos-4", text: "¿Se cuenta con los Manifiestos de Entrega, Transporte y Disposición Final, con firmas y sellos correspondientes y dentro del tiempo legal de retorno?" },
       { id: "sec-residuos-peligrosos-5", text: "¿Las empresas de recolección, transporte y destino cuentan con autorizaciones vigentes de SEMARNAT y/o SCT" },
       { id: "sec-residuos-peligrosos-6", text: "En caso de ser Gran Generador:¿Se tiene Plan de manejo para los RP y está implementado en el área?" },
-      { id: "sec-residuos-peligrosos-7", text: "¿Existe almacén temporal de Residuos peligrosos? En caso de ser Micro generador \"No Aplica\"→Pasar a Combustibles,aceites" },
+      { id: "sec-residuos-peligrosos-7", text: "¿Existe almacén temporal de Residuos peligrosos?" },
       { id: "sec-residuos-peligrosos-8", text: "¿Los recipientes para RP están en buenas condiciones: cerrados, sin fugas y con llenado controlado?" },
       { id: "sec-residuos-peligrosos-9", text: "¿El almacén temporal de RP tiene techo, piso impermeable, contención, señalización y control de acceso?" },
       { id: "sec-residuos-peligrosos-10", text: "¿El tiempo de almacenamiento de los residuos es menor o igula 6 meses ?" },
@@ -22,10 +22,10 @@ const questionnaire = [
   },
   {
     key: "sec-sustancias-quimicas",
-    category: "Sustancias químicas",
+    category: "🧪 Sustancias químicas",
     gateOnFirst: true,
     items: [
-      { id: "sec-sustancias-quimicas-1", text: "¿Existen o almacenan grasas/aceites o sustancias químicas? Respuesta NO APLICA →Pasar a Consumo de agua" },
+      { id: "sec-sustancias-quimicas-1", text: "¿Existen o almacenan grasas/aceites o sustancias químicas?" },
       { id: "sec-sustancias-quimicas-2", text: "¿Se cuenta con Hojas de Datos de Seguridad (HDS) actualizadas en español para todas las sustancias químicas almacenadas conforme a la NOM‑018‑STPS‑2015?" },
       { id: "sec-sustancias-quimicas-3", text: "¿Todos los recipientes con sustancias químicas están etiquetados y señalizados conforme al Sistema Globalmente Armonizado?" },
       { id: "sec-sustancias-quimicas-4", text: "¿Se cuenta con un inventario actualizado de sustancias químicas que incluya nombre comercial, nombre químico, cantidad máxima almacenada y ubicación?" },
@@ -39,7 +39,7 @@ const questionnaire = [
   },
   {
     key: "sec-consumo-de-agua",
-    category: "Consumo de Agua",
+    category: "💧 Consumo de Agua",
     gateOnFirst: false,
     items: [
       { id: "sec-consumo-de-agua-1", text: "¿Se cuenta con Título de Concesión vigente de CONAGUA para la explotación, uso o aprovechamiento de aguas nacionales, o en su ausencia, con contratos de suministro y recibos de pago actualizados del organismo operador local?" },
@@ -54,7 +54,7 @@ const questionnaire = [
   },
   {
     key: "sec-descarga-de-agua",
-    category: "Descarga de agua",
+    category: "🚰 Descarga de agua",
     gateOnFirst: false,
     items: [
       { id: "sec-descarga-de-agua-1", text: "¿Se cuenta con Permiso de Descarga de Aguas Residuales vigente, emitido por CONAGUA o el Municipio, para cada punto de vertido?" },
@@ -67,7 +67,7 @@ const questionnaire = [
   },
   {
     key: "sec-residuos-solidos-urbanos",
-    category: "Residuos Sólidos Urbanos",
+    category: "🗑️ Residuos Sólidos Urbanos",
     gateOnFirst: false,
     items: [
       { id: "sec-residuos-solidos-urbanos-1", text: "¿Existen contratos vigentes con prestadores de recolección de RSU que cuenten con las licencias y permisos municipales requeridos para operar en la zona?" },
@@ -79,10 +79,10 @@ const questionnaire = [
   },
   {
     key: "sec-residuos-de-manejo-especial-rme",
-    category: "Residuos de Manejo Especial (RME)",
+    category: "♻️ Residuos de Manejo Especial (RME)",
     gateOnFirst: true,
     items: [
-      { id: "sec-residuos-de-manejo-especial-rme-1", text: "¿La generación anual de residuos en el sitio supera las 10 toneladas o está listada en la NOM‑161‑SEMARNAT?Respuesta NO APLICA→Pasar a" },
+      { id: "sec-residuos-de-manejo-especial-rme-1", text: "¿La generación anual de residuos en el sitio supera las 10 toneladas o está listada en la NOM‑161‑SEMARNAT?" },
       { id: "sec-residuos-de-manejo-especial-rme-2", text: "¿Se cuenta con el Registro vigente como Generador de Residuos de Manejo Especial, emitido por la autoridad ambiental estatal correspondiente?" },
       { id: "sec-residuos-de-manejo-especial-rme-3", text: "¿Existe un Plan de Manejo de Residuos de Manejo Especial registrado y autorizado por la Secretaría de Medio Ambiente local?" },
       { id: "sec-residuos-de-manejo-especial-rme-4", text: "¿Existe evidencia documental de que los prestadores de transporte, acopio y disposición final de RME cuentan con autorizaciones estatales vigentes para el tipo de residuo que manejan?" },
@@ -94,10 +94,10 @@ const questionnaire = [
   },
   {
     key: "sec-emisiones-a-la-atmosfera",
-    category: "Emisiones a la Atmósfera (Fuentes fijas)",
+    category: "🌫️ Emisiones a la Atmósfera",
     gateOnFirst: true,
     items: [
-      { id: "sec-emisiones-a-la-atmosfera-1", text: "¿Existen fuentes fijas que emiten contaminantes al aire, como humos, gases, vapores o partículas? Respuesta NO APLICA →Pasar a" },
+      { id: "sec-emisiones-a-la-atmosfera-1", text: "¿Existen fuentes fijas que emiten contaminantes al aire, como humos, gases, vapores o partículas?" },
       { id: "sec-emisiones-a-la-atmosfera-2", text: "¿Se cuenta con la Licencia Ambiental Única o la Licencia de Funcionamiento estatal vigente para la operación de todas las fuentes fijas identificadas?" },
       { id: "sec-emisiones-a-la-atmosfera-3", text: "¿Se cuenta con informes de análisis de emisiones en chimenea, realizados por un laboratorio acreditado, que demuestren el cumplimiento con la NOM‑085‑SEMARNAT‑2011 o la NOM‑043‑SEMARNAT‑1993, según corresponda?" },
       { id: "sec-emisiones-a-la-atmosfera-4", text: "¿Se ha presentado la Cédula de Operación Anual (COA) en tiempo, declarando emisiones a la atmósfera?" },
@@ -105,10 +105,10 @@ const questionnaire = [
   },
   {
     key: "sec-emisiones-a-la-atmosfera-movil",
-    category: "Emisiones a la Atmósfera (Flota móvil)",
+    category: "🌫️ Emisiones a la Atmósfera",
     gateOnFirst: true,
     items: [
-      { id: "sec-emisiones-a-la-atmosfera-movil-1", text: "¿El sitio cuenta con vehículos o maquinaria pesada de combustión interna? Respuesta NO APLICA →Pasar a sección Ruido" },
+      { id: "sec-emisiones-a-la-atmosfera-movil-1", text: "¿El sitio cuenta con vehículos o maquinaria pesada de combustión interna?" },
       { id: "sec-emisiones-a-la-atmosfera-movil-2", text: "¿Se cuenta con certificados y hologramas de verificación vehicular vigentes para toda la flota, conforme a la NOM‑041‑SEMARNAT para gasolina y la NOM‑045‑SEMARNAT para diésel?" },
       { id: "sec-emisiones-a-la-atmosfera-movil-3", text: "¿Existen registros de pruebas de opacidad para maquinaria pesada y equipos móviles diésel, que demuestren cumplimiento con los límites de humo establecidos?" },
       { id: "sec-emisiones-a-la-atmosfera-movil-4", text: "¿Se han reportado las emisiones de la flota móvil en la COA o en el RENE cuando superan el umbral de reporte de GEI?" },
@@ -118,7 +118,7 @@ const questionnaire = [
   },
   {
     key: "sec-ruido",
-    category: "Ruido",
+    category: "🔊 Ruido",
     gateOnFirst: false,
     items: [
       { id: "sec-ruido-1", text: "¿Se cuenta con un estudio de ruido perimetral vigente, realizado conforme a los métodos y según la zona donde se ubica el proyecto u oficina?" },
@@ -129,11 +129,11 @@ const questionnaire = [
   },
   {
     key: "sec-suelo-subsuelo",
-    category: "Suelo-Subsuelo",
+    category: "🌱 Suelo-Subsuelo",
     gateOnFirst: false,
     items: [
       { id: "sec-suelo-subsuelo-1", text: "¿En el sitio se realizan actividades de manejo, almacenamiento o trasvase de sustancias químicas, lubricantes o combustibles, o existe maquinaria y vehículos de combustión cuya operación implique riesgo de infiltración por goteo o derrames al terreno?" },
-      { id: "sec-suelo-subsuelo-2", text: "¿Existe evidencia de que, en caso de que haber ocurrido un derrame mayor a 1 m3 de materiales o residuos peligrosos, se notificó de inmediato a PROFEPA? Respuesta NO APLICA →Pasar a sección" },
+      { id: "sec-suelo-subsuelo-2", text: "¿Existe evidencia de que, en caso de que haber ocurrido un derrame mayor a 1 m3 de materiales o residuos peligrosos, se notificó de inmediato a PROFEPA?" },
       { id: "sec-suelo-subsuelo-3", text: "¿Se ha verificado mediante estudios de laboratorio acreditados que las concentraciones de hidrocarburos o metales pesados en el suelo cumplen con los límites máximos permisibles de las normas NOM-138-SEMARNAT o NOM-147-SEMARNAT según corresponda?" },
       { id: "sec-suelo-subsuelo-4", text: "¿Se cuenta con informes de caracterización de sitio y, cuando corresponde, con programas de remediación autorizados por SEMARNAT para predios con pasivos ambientales o contaminaciones accidentales?" },
       { id: "sec-suelo-subsuelo-5", text: "¿Se han cumplido las condicionantes de protección del suelo establecidas en la MIA, como el rescate y conservación de la capa fértil en frentes de obra?" },
@@ -144,10 +144,10 @@ const questionnaire = [
   },
   {
     key: "sec-recursos-y-vida-silvestre",
-    category: "Recursos y vida silvestre",
+    category: "🐾 Recursos y vida silvestre",
     gateOnFirst: true,
     items: [
-      { id: "sec-recursos-y-vida-silvestre-1", text: "¿El proyecto se ubica en zonas con vegetación forestal o hábitats de fauna silvestre, o realiza actividades como desmonte, despalme, interacción con especies o uso de productos forestales que deban gestionarse conforme a la normativa ambiental? Respuesta NO APLICA →Pasar a sección" },
+      { id: "sec-recursos-y-vida-silvestre-1", text: "¿El proyecto se ubica en zonas con vegetación forestal o hábitats de fauna silvestre, o realiza actividades como desmonte, despalme, interacción con especies o uso de productos forestales que deban gestionarse conforme a la normativa ambiental?" },
       { id: "sec-recursos-y-vida-silvestre-2", text: "¿Se cuenta con la autorización vigente de Cambio de Uso de Suelo en Terrenos Forestales (CUSTF) para las áreas donde se realiza la remoción de vegetación?" },
       { id: "sec-recursos-y-vida-silvestre-3", text: "¿Se cuenta con un inventario de flora y fauna del sitio que identifique especies en categoría de riesgo conforme a la NOM‑059‑SEMARNAT‑2010?" },
       { id: "sec-recursos-y-vida-silvestre-4", text: "¿Se cuenta con facturas, guías o documentos de transporte que acrediten la legal procedencia de la madera, tarimas o productos forestales utilizados, conforme a la Ley General de Desarrollo Forestal Sustentable?" },
@@ -222,7 +222,6 @@ function defaultOptions() {
 
 function visibleFlow() {
   return state.flow.filter((item) => {
-    if (!item.gateOnFirst) return true;
     if (item.indexInSection === 0) return true;
 
     const gateItem = state.flow.find((q) => q.sectionKey === item.sectionKey && q.indexInSection === 0);
@@ -320,7 +319,7 @@ function renderQuestion() {
 function saveAnswer(item, value) {
   state.answers[item.id] = value;
 
-  if (item.gateOnFirst && item.indexInSection === 0) {
+  if (item.indexInSection === 0) {
     const sectionItems = state.flow.filter((q) => q.sectionKey === item.sectionKey && q.indexInSection > 0);
 
     if (isNoAplica(value)) {
